@@ -1,118 +1,128 @@
 <html>
-     <head>
-           <meta charset="UTF-8">
-           <title> Thiago Baltazar </title>
-      </head>
-      <body>
-        <h1> Primeiro Cabeçalho </h1>
-        <h2> Segundo Cabeçalho </h2>
-        <h3> Segundo Cabeçalho </h3>
-        <h4> Segundo Cabeçalho </h4>
 
-        <p> Primeiro paragrafo</p>
+	<head>
+	   <meta charset = "UTF-8">
+	   <title> JhonatanSantiago </title>
+		 <link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
 
-        <img src="img/download.png" title="UFT" />
-        <br>
+	<body>
+	  <h1> Primeiro cabeçario </h1>
+	  <h2> Primeiro cabeçario </h2>
+	  <h3> Primeiro cabeçario </h3>
+	  <h4> Primeiro cabeçario </h4>
+	  <p>Primeiro paragrafo.</p>
 
-    <a href="http://g1.globo.com/" target="blank">  Site G1 </a>
-       <br>
-    <table>
-          <caption>Descrição da tabela</caption>
-          <thead>
-                <tr>
-                    <th>Coluna 1</th>
-                    <th>Coluna 2</th>
-               </tr>
-          </thead>
-          <tbody>
-                <tr>
-                    <td>Linha 1 Coluna 1</th>
-                    <td>Linha 1 Coluna 2</th>
-               </tr>
-               <tr>
-                   <td>Linha 2 Coluna 1</th>
-                   <td>Linha 2 Coluna 2</th>
-              </tr>
-              <tr>
-                  <td>Linha 3 Coluna 1</th>
-                  <td>Linha 3 Coluna 2</th>
-             </tr>
-          </tbody>
-        </table>
+<img src="img/dori.jpg" title="dori" />
+<br>
+<a href="http://g1.globo.com/" target="blank"> site G1 </a>
 
-        <h2>Lista Ordenada</h2>
-        <ol>
-          <li>Item 1 </li>
-          <li>Item 2 </li>
-          <li>Item 3 </li>
-       </ol>
+<table>
+	<caption>Descrição tabela</caption>
+	<thead>
+		<tr>
+			<th>Coluna 1</th>
+			<th>Coluna 2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td> linha 1 coluna 1 </td>
+			<td> linha 1 coluna 2 </td>
+		</tr>
+		<tr>
+			<td> linha 2 coluna 1 </td>
+			<td> linha 2 coluna 2 </td>
+		</tr>
+		<tr>
+			<td> linha 3 coluna 1 </td>
+			<td> linha 3 coluna 2 </td>
+		</tr>
+ </tbody>
+ </table>
 
-       <h2>Lista Não-Ordenada</h2>
-       <ul>
-         <li>Item 1 </li>
-         <li>Item 2 </li>
-         <li>Item 3 </li>
-      </ul>
+ <h2>Lista ordenada</h2>
+ <ol>
+ 	<li>item 1 </li>
+ 	<li>item 2 </li>
+	<li>item 3 </li>
+</ol>
 
-      <form action="/cadastro/" method="post">
-        <label>Login:</label>
-        <input type="text" name="login" placeholder="Digite seu login">
+<h2>Lista Não Ordenada</h2>
+<ul>
+ <li>item 1 </li>
+ <li>item 2 </li>
+ <li>item 3 </li>
+</ul>
 
-        <label>Senha:</label>
-        <input type="password" name="senha">
-        <br>
-        <input type="radio" name="sexo" value="1" checked>
-        Masculino
-        <input type="radio" name="sexo" value="2">
-        Feminino
 
-        <br>
+<form method="post">
 
-        <label>Curso:</label>
-        <select name="Curso">
-          <option value="1">Ciência da Computação</option>
-          <option value="2">Direito</option>
-          <option value="3">Engenharia Elétrica</option>
-          <option value="4">Medicina</option>
+	<label> Login: </label>
+	<input type="text" name="login" placeholder="Digite seu login">
 
-          <br>
-          <label>Mensagem:</label>
-          <textarea name="message" rows="10" cols="30"></textarea>
-          <br>
-          <input type="checkbox" name="veiculo1" value="bike"> Eu tenho uma bike
-          <input type="checkbox" name="veiculo2" value="carro"> Eu tenho um carro
+	<label> Senha: </label>
+	<input type="password" name="senha"placeholder="Digite sua senha" >
 
-          <br>
-          <label>Idade:</label>
-          <input type="number" name="idade" min="0" max="100" step="0.5" value="50">
+	<input type="radio" name="sexo" value="1" checked>
+	 Masculino
+	<input type="radio" name="sexo" value="2">
+	 Feminino
+<br>
+<label>Curso</label>
+<select name="curso">
+	<option value="1">Ciência da computação</option>
+	<option value="2">Direito</option>
+	<option value="3">Engenharia Eletrica</option>
+	<option value="3">Medicina</option>
+	</select>
+<br>
+<label>Mensagem:</label> <textarea name="message" rows="10" cols="30"></textarea>
+<br>
+<input type="checkbox" name="veiculo1" value="bike"> eu tenho uma bike
+<input type="checkbox" name="veiculo2" value="carro"> eu tenho um carro
+<br>
+<label>Idade:</label>
+<input type="number" name="idade" min="0" max="100" step="1" value="30">
+<br>
+<label> Data de nascimento: </label>
+<input type="date" name="data_nascimento" min="2000-01-02">
 
-          <br>
-          <label>Data de nascimento:</label>
-          <input type="date" name="data_nascimento" min="2000-01-02">
+<label> Auto Complete </label>
+<input list="cheeses">
+<datalist id="cheeses">
+	<option>Camembert </option>
+	<option>Cheddar </option>
+	<option>Chèvre </option>
+	<option>Cotija </option>
+	<option>Emmental </option>
+	<option>Feta </option>
+</datalist>
+<br>
 
-          <br>
-          <label>Como vai para a faculdade:</label>
-          <input list="cheeses">
-          <datalist id="cheeses">
-            <option>Carro</option>
-            <option>Moto</option>
-            <option>Avião</option>
-            <option>Barco</option>
-            <option>Pé</option>
-          </datalist>
+<input type="hidden" name="country" value="Brasil">
 
-          <input type="hidden" name="country" value="Brasil">
+<input type="reset" value="Limpar">
+<input type="submit" value="enviar">
+<button type="button" onclick="alert('hello World')"> Click Aki!</button>
 
-          <input type="reset" value="Limpar">
-          <input type="submit" value="Enviar">
-          <button type="button" onclick="alert('Você Ganhou 10.000!')">Click!</button>
+<div id="area-mensagem">
+	elementos de bloco
+</div>
 
-          <div id="area-mensagem">
-              elementos de bloco
-          </div>
+Elementos <span class="destaque"> de </span> linha
 
-          Elementos <span class="destaque"> </span> linha
-      </from>
 
-      </body>
+
+
+
+
+</form>
+
+
+
+
+
+	</body>
+
 </html>
